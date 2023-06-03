@@ -53,6 +53,7 @@ footer {
   padding-bottom: 60px;
   padding-top: 60px;
   position: relative;
+  z-index: 1;
 }
 a {
   text-decoration: none;
@@ -243,7 +244,43 @@ a.image_header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer_text {
+  display: block;
+  margin-top: 12px;
+  padding-left: 78px;
+  color: var(--second_color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142px;
+}
+.footer_form {
+  padding-left: 78px;
+  margin-top: 20px;
+}
+.footer_message {
+  background-color: var(--background_color_footer);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+.button_footer {
+  background-color: var(--focus_hover_color);
+  color: var(--second_color);
+  fill: var(--second_color);
+  align-items: center;
+  padding: 10px 28px 10px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  border: none;
+  border-radius: 4px;
+}
+
 /* style index */
+
 /* zamów usługę */
 .order_service {
   background-color: var(--background_color_footer);
@@ -307,6 +344,7 @@ a.image_header {
   transition: transform 0.6s ease-in;
   transform: translate(-50%, -50%);
   position: relative;
+  z-index: 1;
 }
 .is-hidden .text_order_service {
   transform: scale(0);
@@ -317,8 +355,140 @@ a.image_header {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  top: 0;
   right: 0;
   background-color: var(--second_color);
+}
+.header_modal {
+  padding: 40px 40px 2px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+.form_order {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.input_list {
+  display: inline-flex;
+  padding: 11px 12px;
+  align-items: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.input_list:hover,
+.input_list:focus-within {
+  border-color: var(--focus_hover_color);
+  fill: var(--focus_hover_color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text_input {
+  padding-left: 6px;
+  border: none;
+  outline: none;
+}
+.header_form_list {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.142;
+  color: #757575;
+}
+.comment {
+  display: block;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.comment:hover,
+.comment:focus-within {
+  border-color: var(--focus_hover_color);
+  fill: var(--focus_hover_color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox {
+  padding-top: 20px;
+  display: inline-flex;
+  position: absolute;
+  left: 54px;
+  align-items: center;
+}
+.checkbox_control {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  transition: box-shadow 0.15s ease-in;
+}
+.checkbox_input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.checkbox_label {
+  transition: background-color 0.2s ease-in, box-shadow 0.15s ease-in,
+    border-color 0.15s ease-in;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #c0c7cf;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.checkbox_label:hover {
+  box-shadow: 0 0 3px 0 var(--second_color_logo);
+  border-color: var(--second_color_logo);
+}
+.checkbox_label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 4px;
+  top: 3px;
+  width: 55%;
+  height: 40%;
+  transform: rotate(-52deg);
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+.checkbox_input:checked + .checkbox_label {
+  border-color: var(--second_color_logo);
+  background-color: var(--second_color_logo);
+}
+.checkbox_input:checked + .checkbox_label::after {
+  border-color: #fff;
+}
+.declaration {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  padding-left: 7px;
+}
+.button_modal {
+  padding: 10px 76px;
+  background-color: var(--second_color_logo);
+  color: var(--second_color);
+  border: none;
+  border-radius: 4px;
+  margin-top: 74px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
 }
 /* nasze umiejetności */
 .our_aces {
@@ -375,6 +545,7 @@ a.image_header {
 .what_we_do_pictures {
   position: relative;
   display: inline-flex;
+  z-index: -1;
 }
 .what_we_do_name {
   position: absolute;
