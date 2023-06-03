@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +48,7 @@
             <li class="mail_header_list">
               <a href="mailto:info@devstudio.com" class="image_header cursor">
                 <svg width="16" height="12">
-                  <use href="images/icons.svg#icon-envelope"></use>
+                  <use href="images/icons.svg#icon_envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
@@ -56,7 +56,7 @@
             <li class="tel_header_list">
               <a href="tel:+48111111111" class="image_header cursor">
                 <svg width="10" height="16">
-                  <use href="images/icons.svg#icon-smartphone"></use>
+                  <use href="images/icons.svg#icon_smartphone"></use>
                 </svg>
                 +48 111 111 111</a
               >
@@ -86,8 +86,67 @@
                   <use href="images/icons.svg#img_close_window"></use>
                 </svg>
               </button>
+              <h2 class="header_modal">
+                Zostaw swoje dane w formularzu poniżej
+              </h2>
+              <form class="form_order">
+                <label type="text" name="name" class="header_form_list"
+                  >Imię</label
+                >
+                <label class="input_list">
+                  <svg width="12" height="12">
+                    <use href="images/icons.svg#icon_human"></use>
+                  </svg>
+                  <input type="text" name="name" class="text_input" />
+                </label>
+                <label type="tel" name="phone" class="header_form_list"
+                  >Telefon</label
+                >
+                <label class="input_list">
+                  <svg width="12" height="12">
+                    <use href="images/icons.svg#icon_phone"></use>
+                  </svg>
+                  <input type="tel" name="phone" class="text_input" />
+                </label>
+                <label type="email" name="email" class="header_form_list"
+                  >Mail</label
+                >
+                <label class="input_list">
+                  <svg width="15" height="12">
+                    <use href="images/icons.svg#icon_envelope_order"></use>
+                  </svg>
+                  <input type="email" name="email" class="text_input" />
+                </label>
+                <label type="text" name="comment" class="header_form_list"
+                  >Komentarz</label
+                >
+                <textarea
+                  name="text"
+                  placeholder="Wprowadź tekst"
+                  class="comment"
+                ></textarea>
+              </form>
+              <div class="checkbox">
+                <div class="checkbox_control">
+                  <input
+                    type="checkbox"
+                    id="check"
+                    name="check"
+                    value="1"
+                    class="checkbox_input"
+                  />
+                  <label class="checkbox_label" for="check"></label>
+                </div>
+                <p class="declaration">
+                  Oświadczam iż akceptuję
+                  <a href="#" class="second-color">Regulamin</a> i
+                  <a href="#" class="second-color"> Politykę Prywatności.</a>
+                </p>
+              </div>
+              <button type="submit" class="button_modal cursor">Wyślij</button>
             </div>
           </div>
+
           <script src="modal.js"></script>
         </div>
       </section>
@@ -97,22 +156,22 @@
           <ul class="icon_our_aces_list">
             <li class="icon_our_aces">
               <svg width="70px" height="70px">
-                <use href="images/icons.svg#icon-antenna"></use>
+                <use href="images/icons.svg#icon_antenna"></use>
               </svg>
             </li>
             <li class="icon_our_aces">
               <svg width="70px" height="70px">
-                <use href="images/icons.svg#icon-clock"></use>
+                <use href="images/icons.svg#icon_clock"></use>
               </svg>
             </li>
             <li class="icon_our_aces">
               <svg width="70px" height="70px">
-                <use href="images/icons.svg#icon-computer"></use>
+                <use href="images/icons.svg#icon_computer"></use>
               </svg>
             </li>
             <li class="icon_our_aces">
               <svg width="70px" height="70px">
-                <use href="images/icons.svg#icon-astronaut"></use>
+                <use href="images/icons.svg#icon_astronaut"></use>
               </svg>
             </li>
           </ul>
@@ -208,7 +267,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-instagram"></use>
+                      <use href="images/icons.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -222,7 +281,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-twitter"></use>
+                      <use href="images/icons.svg#icon_twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -236,7 +295,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-facebook"></use>
+                      <use href="images/icons.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -250,7 +309,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-linkedin2"></use>
+                      <use href="images/icons.svg#icon_linkedin2"></use>
                     </svg>
                   </a>
                 </li>
@@ -276,7 +335,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-instagram"></use>
+                      <use href="images/icons.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -290,7 +349,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-twitter"></use>
+                      <use href="images/icons.svg#icon_twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -304,7 +363,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-facebook"></use>
+                      <use href="images/icons.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -318,7 +377,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-linkedin2"></use>
+                      <use href="images/icons.svg#icon_linkedin2"></use>
                     </svg>
                   </a>
                 </li>
@@ -344,7 +403,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-instagram"></use>
+                      <use href="images/icons.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -358,7 +417,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-twitter"></use>
+                      <use href="images/icons.svg#icon_twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -372,7 +431,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-facebook"></use>
+                      <use href="images/icons.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -386,7 +445,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-linkedin2"></use>
+                      <use href="images/icons.svg#icon_linkedin2"></use>
                     </svg>
                   </a>
                 </li>
@@ -412,7 +471,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-instagram"></use>
+                      <use href="images/icons.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -426,7 +485,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-twitter"></use>
+                      <use href="images/icons.svg#icon_twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -440,7 +499,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-facebook"></use>
+                      <use href="images/icons.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -454,7 +513,7 @@
                       width="20px"
                       height="20px"
                     >
-                      <use href="images/icons.svg#icon-linkedin2"></use>
+                      <use href="images/icons.svg#icon_linkedin2"></use>
                     </svg>
                   </a>
                 </li>
@@ -548,7 +607,7 @@
                 href="https://www.instagram.com/"
               >
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-instagram"></use>
+                  <use href="images/icons.svg#icon_instagram"></use>
                 </svg>
               </a>
             </li>
@@ -558,7 +617,7 @@
                 href="https://twitter.com/?lang=pl"
               >
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-twitter"></use>
+                  <use href="images/icons.svg#icon_twitter"></use>
                 </svg>
               </a>
             </li>
@@ -568,7 +627,7 @@
                 href="https://pl-pl.facebook.com/"
               >
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-facebook"></use>
+                  <use href="images/icons.svg#icon_facebook"></use>
                 </svg>
               </a>
             </li>
@@ -578,11 +637,28 @@
                 href="https://pl.linkedin.com/"
               >
                 <svg class="color_icon_footer" width="20" height="20">
-                  <use href="images/icons.svg#icon-linkedin2"></use>
+                  <use href="images/icons.svg#icon_linkedin2"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <p class="footer_text">Zapisz się do newslettera</p>
+          <form class="footer_form">
+            <input
+              type="email"
+              name="email"
+              class="footer_message"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button_footer">
+              Zapisz się
+              <svg width="24" height="24" class="image_footer">
+                <use href="images/icons.svg#icon_send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
